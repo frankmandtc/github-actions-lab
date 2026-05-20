@@ -56,3 +56,13 @@ La primera prueba (haciendo un push) no me funciona (no se ejecuta el workflow).
 Pero veo que se produce un error en el trabajo "test"
 ![alt text](image-1.png)
 **Afortunadamente**, este mismo fallo le surgió a un compañero, y me indica el lugar en el que hay que realizar una modificación ( fichero *start-game.spec-tsx*)
+Hago el cambio que me comenta y actualizo el repo en github
+![alt text](image-2.png)
+Y compruebo que esta vez se ha ejecutado el Workflow Integración Continua de forma satisfactoria
+![alt text](image-3.png)
+![alt text](image-4.png)
+Compruebo el trabajo **"build"** y todos los pasos que se han realizado
+![alt text](image-5.png)
+Igual ocurre con el **"test"**
+![alt text](image-6.png)
+
