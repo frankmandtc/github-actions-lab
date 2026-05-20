@@ -66,3 +66,35 @@ Compruebo el trabajo **"build"** y todos los pasos que se han realizado
 Igual ocurre con el **"test"**
 ![alt text](image-6.png)
 
+# 2.- Workflow CD para el proyecto de frontend
+Vamos a crear el fichero cd.yml, que tendrá un workflow de Despliegue continuo, que se encargará de llevar el código ya validado a un entorno "real". Pondremos que la ejecución se hará manual (workflow_dispatch) desde la interfaz de GitHub.
+```
+name: Despliegue Continuo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  delivery:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Docker Login
+        uses: docker/login-action@v4
+        with:
+          username: ${{ vars.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+     - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v7
+        with:
+          push: true
+          tags: frankmandtc/hangman-front:latest
+          context: ./hangman-front
+```
