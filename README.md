@@ -98,12 +98,19 @@ jobs:
           tags: frankmandtc/hangman-front:latest
           context: ./hangman-front
 ```
-<br/>
-Una vez creadas las variables de nuestra cuenta de DOCKER HUB, debería funcionarnos. Lanzamos el workflow "Despliegue continuo" de forma manual<br/>
+
+Una vez creadas las variables de nuestra cuenta de DOCKER HUB, debería funcionarnos. Lanzamos el workflow "Despliegue continuo" de forma manual
+
 ![alt text](image-8.png)
-Vemos que ha funcionado correctamente<br/>
+
+Vemos que ha funcionado correctamente
+
 ![alt text](image-9.png)
-Observamos todos los trabajos que ha realizado de forma satisfactoria<br/>
+
+Observamos todos los trabajos que ha realizado de forma satisfactoria
+
 ![alt text](image-10.png)
-Y para comprobar que ha funcionado perfectamente, entramos en My Hub de mi cuenta de Docker HUB y vemos que está dicho repositorio<br/>
+
+Y para comprobar que ha funcionado perfectamente, entramos en My Hub de mi cuenta de Docker HUB y vemos que está dicho repositorio
+
 ![alt text](image-11.png)
