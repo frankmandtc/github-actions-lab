@@ -51,7 +51,7 @@ jobs:
 
 Vamos a definir los eventos de nuestro workflow: push y pull_request. Esto indica que cuando se produzca alguno de estos 2 eventos en nuestro github, lanzaremos los trabajos (jobs)
 
-La primera prueba (haciendo un push) no me funciona (no se ejecuta el workflow). Buscando info, me doy cuenta que necesito cambiar algo del código fuente para que se lance
+La primera prueba (haciendo un push) no me funciona (no se ejecuta el workflow). Recordando la clase on line del otro día, me doy cuenta que necesito cambiar algo del código fuente para que se lance.
 ![alt text](image.png)
 Pero veo que se produce un error en el trabajo "test"
 ![alt text](image-1.png)
