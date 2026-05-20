@@ -62,7 +62,7 @@ Y compruebo que esta vez se ha ejecutado el Workflow Integración Continua de fo
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 Compruebo el trabajo **"build"** y todos los pasos que se han realizado
-![alt text](image-5.png)
+![alt text](image-7.png)
 Igual ocurre con el **"test"**
 ![alt text](image-6.png)
 
