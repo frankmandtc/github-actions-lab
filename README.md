@@ -1,1 +1,2 @@
-# github-actions-lab
+# 1.- Workflow CI para el proyecto de frontend
+Vamos a crear un workflow en Github para el proyecto hangman-front, donde vamos a usar CI para automatizar el build y los test unitarios del proyecto cuando hay cambios (push o pull requests) en la rama main.
