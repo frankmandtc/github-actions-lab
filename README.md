@@ -50,3 +50,9 @@ jobs:
 
 
 Vamos a definir los eventos de nuestro workflow: push y pull_request. Esto indica que cuando se produzca alguno de estos 2 eventos en nuestro github, lanzaremos los trabajos (jobs)
+
+La primera prueba (haciendo un push) no me funciona (no se ejecuta el workflow). Buscando info, me doy cuenta que necesito cambiar algo del código fuente para que se lance
+![alt text](image.png)
+Pero veo que se produce un error en el trabajo "test"
+![alt text](image-1.png)
+**Afortunadamente**, este mismo fallo le surgió a un compañero, y me indica el lugar en el que hay que realizar una modificación ( fichero *start-game.spec-tsx*)
